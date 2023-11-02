@@ -35,6 +35,7 @@ body {
 
 #header-top-left a:hover,
 #header-top-right a:hover {
+  cursor: pointer;
   color: #ee2e24;
 }
 
@@ -163,6 +164,7 @@ body {
 
 #follow a:hover,
 #user a:hover {
+  cursor: pointer;
   color: #ee2e24;
 }
 
@@ -240,14 +242,11 @@ body {
 /* End Header Main */
 
 /* HomePage */
-#homepage-menu {
-  position: relative;
-}
+/* homepage-menu menu */
 #menu {
-  position: absolute;
-  top: -40px;
-  left: 0;
+  margin-top: -40px;
 }
+
 #menu h3 {
   margin: 0;
   padding: 0 10px;
@@ -282,8 +281,8 @@ body {
 #menu ul > li {
   position: relative;
   list-style: none;
-  height: 32px;
-  line-height: 32px;
+  height: 30px;
+  line-height: 30px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -362,5 +361,45 @@ body {
 #menu ul > li:hover {
   cursor: pointer;
   background: #f5f5f5;
+}
+/* homepage-menu slider */
+#slider {
+  padding-top: 10px;
+}
+
+/* homepage-menu banner-right */
+#banner-right {
+  padding-top: 10px;
+}
+
+.banner-right-item {
+  margin-bottom: 10px;
+}
+
+#banner-bottom {
+  margin-top: 15px;
+}
+
+.banner-hover a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-hover a::before {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  transform: skew(-45deg);
+}
+
+.banner-hover a:hover::before {
+  width: 130%;
+  background: transparent;
+  transition: 0.4s;
 }
 /* End HomePage */
