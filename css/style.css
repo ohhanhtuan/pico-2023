@@ -402,4 +402,142 @@ body {
   background: transparent;
   transition: 0.4s;
 }
+
+/* Hot Products */
+#hot-products {
+  margin-top: 30px;
+}
+
+#hot-product > h3 {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0;
+  background: #ee2e24;
+  border-radius: 10px 10px 0 0;
+}
+
+#hot-product h3 i {
+  position: relative;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 53px;
+}
+
+#hot-product h3 i::before {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 48px;
+  background: url(../images/sprite.png) no-repeat -8px -204px;
+  left: 0;
+  top: -8px;
+}
+
+#hot-product-main {
+  position: relative;
+  padding: 15px;
+  border: 2px solid #ee2e24;
+  border-radius: 0 0 10px 10px;
+  background: #fff;
+}
+
+#view-all {
+  position: absolute;
+  left: 50%;
+  bottom: -21px;
+  transform: translateX(-50%);
+  height: 40px;
+  line-height: 40px;
+  padding: 0 64px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ee2e24;
+  background: #fff;
+  border: 1px solid #ee2e24;
+  border-radius: 60px;
+}
+
+#view-all:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #ee2e24;
+}
+
+.product-item {
+  border: none;
+}
+
+.product-item-top {
+  position: relative;
+  display: block;
+}
+
+.product-item-top i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 20px;
+  background: url(../images/icon-hot.png) no-repeat;
+  background-size: contain;
+}
+
+.product-item-top span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 45px;
+  height: 45px;
+  background: url(../images/icon-offer.png) no-repeat;
+  background-size: contain;
+}
+
+.product-item h3 {
+  font-size: 14px;
+}
+
+.product-item h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.product-item-price {
+  display: flex;
+}
+
+.product-item-price p b {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ee2e24;
+}
+
+.product-item-price p del {
+  font-size: 14px;
+  color: #888;
+}
+
+.product-item-price span {
+  display: block;
+  width: 41px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  color: #eee;
+  background: url(../images/bg-discount.png) no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+}
+
+.product-slide-button {
+  background: #999;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  top: 40%;
+}
 /* End HomePage */
