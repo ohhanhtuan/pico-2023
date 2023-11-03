@@ -540,4 +540,9 @@ body {
   border-radius: 100%;
   top: 40%;
 }
+
+.product-item-top:hover img {
+  transform: translateY(-10px);
+  transition: all 0.2s;
+}
 /* End HomePage */
