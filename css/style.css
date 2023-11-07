@@ -557,6 +557,18 @@ body {
   margin-top: 40px;
 }
 
+.product-item-height {
+  height: 335px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background: inherit;
+}
+
+.product-item-bgbody {
+  background: inherit;
+}
+
 .tab-product > ul > li > button {
   color: #555;
   text-transform: uppercase;
