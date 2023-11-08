@@ -588,6 +588,150 @@ body {
 }
 /* End HomePage */
 
+/* News Letter */
+#news-letter {
+  text-align: center;
+  padding: 26px 0;
+  color: #fff;
+  background: #ee2e24;
+}
+
+#news-letter-main h3 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#news-letter-main form {
+  position: relative;
+  width: 620px;
+  margin: 12px auto auto auto;
+}
+
+#news-letter-main form input {
+  width: 100%;
+  height: 42px;
+  background: #fff;
+  padding-left: 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+#news-letter-right {
+  position: absolute;
+  color: #ee2e24;
+  font-size: 30px;
+  top: 6px;
+  right: 8px;
+  cursor: pointer;
+}
+
+#news-letter-main form input:focus {
+  outline: none;
+}
+/* End News Letter */
+
+/* Footer */
+/* Footer Top */
+#footer-top {
+  background: #fff;
+}
+
+#footer-top-left,
+#footer-top-center,
+#footer-top-right {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+#footer-top-left a,
+#footer-top-center a,
+#footer-top-right a {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  padding-left: 68px;
+}
+
+#footer-top-left a b,
+#footer-top-center a b,
+#footer-top-right a b {
+  display: block;
+  font-size: 16px;
+}
+
+#footer-top-left a span,
+#footer-top-center a span,
+#footer-top-right a span {
+  font-size: 13px;
+  color: #555;
+}
+
+#footer-top-left a::before,
+#footer-top-center a::before,
+#footer-top-right a::before {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+#footer-top-left a::before {
+  background: url(../images/sprite.png) no-repeat -6px -102px;
+}
+#footer-top-center a::before {
+  background: url(../images/sprite.png) no-repeat -81px -102px;
+}
+#footer-top-right a::before {
+  background: url(../images/sprite.png) no-repeat -153px -102px;
+}
+/* End Footer Top */
+
+/* Footer Main */
+#footer-main {
+  background: #fff;
+  border-top: 1px dashed #e1e1e1;
+}
+
+#footer-main-1-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#footer-main-1-info a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 5px;
+}
+/* End Footer Main */
+
+/* Footer Bottom */
+#footer-bottom {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footer-bottom p {
+  font-size: 12px;
+  margin: 0;
+}
+
+#footer-bottom a {
+  text-decoration: none;
+  color: #ee2e24;
+}
+/* End Footer Bottom */
+/* End Footer */
+
 /* Responsive */
 /* Tablet */
 @media (min-width: 768px) and (max-width: 992px) {
