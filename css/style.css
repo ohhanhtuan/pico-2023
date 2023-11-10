@@ -843,6 +843,11 @@ body {
   margin: 10px 0;
 }
 
+#footer-main-3 a:hover {
+  cursor: pointer;
+  color: #ee2e24;
+}
+
 /* footer-main-4 */
 #footer-main-4 .footer-main-4-pay {
   display: flex;
