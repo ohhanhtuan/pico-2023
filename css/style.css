@@ -143,6 +143,7 @@ body {
 
 #cart span {
   position: absolute;
+  display: block;
   width: 20px;
   height: 20px;
   line-height: 20px;
