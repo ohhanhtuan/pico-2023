@@ -586,6 +586,38 @@ body {
   background: #ee2e24 !important;
   border-color: #ee2e24 !important;
 }
+
+/* News Pico */
+#news-pico-title {
+  margin: 10px 0;
+}
+
+#news-pico-title h4 {
+  margin: 0;
+}
+
+#news-pico-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#news-pico-title h4 a i {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  background: #ee2e24;
+  text-align: center;
+  margin-right: 12px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 100%;
+}
+
+#news-pico-title h4 a:hover {
+  color: #364fc7;
+}
+/* End News Pico */
 /* End HomePage */
 
 /* News Letter */
@@ -697,6 +729,12 @@ body {
 #footer-main {
   background: #fff;
   border-top: 1px dashed #e1e1e1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#footer-main b {
+  font-size: 16px;
 }
 
 #footer-main-1-info {
@@ -707,11 +745,143 @@ body {
 }
 
 #footer-main-1-info a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-size: 13px;
-  color: #333;
+  color: inherit;
   margin-bottom: 5px;
 }
+
+#footer-main-1-info a i {
+  margin-right: 5px;
+  color: #ee2e24;
+}
+
+#footer-main-1-info a:nth-child(2):hover,
+#footer-main-1-info a:nth-child(3):hover,
+#footer-main-1-info a:nth-child(5):hover,
+#footer-main-1-info a:nth-child(6):hover {
+  color: #ee2e24;
+}
+
+#footer-main-1-social {
+  display: flex;
+  padding-left: 32px;
+  margin: 10px 0;
+}
+
+#footer-main-1-social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  transition: all 0.2s;
+}
+
+#footer-main-1-social a:nth-child(1) {
+  background: url(../images/sprite.png) no-repeat -226px -102px;
+}
+
+#footer-main-1-social a:nth-child(2) {
+  background: url(../images/sprite.png) no-repeat -286px -102px;
+}
+
+#footer-main-1-social a:nth-child(3) {
+  background: url(../images/sprite.png) no-repeat -344px -102px;
+}
+
+#footer-main-1-social a:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s;
+}
+
+/* footer-main-2 */
+#footer-main-2 a {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  color: inherit;
+  margin: 10px 0;
+}
+
+#footer-main-2 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  background: #ee2e24;
+  padding: 10px 0;
+  margin-bottom: 0;
+  width: 180px;
+  border-radius: 6px;
+}
+
+#footer-main-2 p i {
+  margin-right: 5px;
+}
+#footer-main-2 a img {
+  width: 125px;
+}
+
+#footer-main-2 a:hover {
+  color: #ee2e24;
+}
+
+#footer-main-2 p:hover {
+  cursor: pointer;
+  background: #cd020b;
+}
+
+/* footer-main-3 */
+#footer-main-3 a {
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  color: inherit;
+  margin: 10px 0;
+}
+
+/* footer-main-4 */
+#footer-main-4 .footer-main-4-pay {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.footer-main-4-fanpage-dip {
+  margin: 10px 0;
+}
+
+.footer-main-4-pay a:nth-child(1) {
+  display: block;
+  width: 58px;
+  height: 18px;
+  background: url(../images/sprite.png) no-repeat -146px -166px;
+}
+
+.footer-main-4-pay a:nth-child(2) {
+  display: block;
+  width: 46px;
+  height: 22px;
+  background: url(../images/sprite.png) no-repeat -8px -165px;
+}
+
+.footer-main-4-pay a:nth-child(3) {
+  display: block;
+  width: 50px;
+  height: 22px;
+  background: url(../images/sprite.png) no-repeat -210px -164px;
+}
+
+.footer-main-4-pay a:nth-child(4) {
+  display: block;
+  width: 58px;
+  height: 22px;
+  background: url(../images/sprite.png) no-repeat -68px -162px;
+}
+
 /* End Footer Main */
 
 /* Footer Bottom */
