@@ -369,7 +369,6 @@ body {
   box-shadow: 0 0 8px #c1c1c1;
   background: #fff;
   display: none;
-  overflow: auto;
   z-index: 20;
 }
 
@@ -410,6 +409,7 @@ body {
 #slider {
   padding-top: 10px;
 }
+/* End homepage-menu slider */
 
 /* homepage-menu banner-right */
 #banner-right {
@@ -446,6 +446,7 @@ body {
   background: transparent;
   transition: all 0.4s;
 }
+/* End homepage-menu banner-right */
 
 /* Hot Products */
 #hot-products {
@@ -611,8 +612,93 @@ body {
 .product-item img {
   transition: all 0.2s;
 }
+/* End Hot-Products */
 
-/* tab-products */
+/* Suggest */
+#suggest-product {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+#suggest-product h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-align: center;
+}
+
+#suggest-product-main {
+  background: #fff;
+}
+
+.suggest-item {
+  border: none;
+  padding: 10px;
+}
+
+.suggest-item h4 {
+  margin-top: 8px;
+  height: 35px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.suggest-item > h4 > a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.suggest-item-price {
+  text-align: center;
+}
+
+.suggest-item-price > p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #ee2e24;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.suggest-item-price del {
+  font-size: 11px;
+  color: #555;
+}
+
+.suggest-item-top {
+  display: block;
+  position: relative;
+}
+
+.suggest-item-top > span {
+  position: absolute;
+  display: inline-block;
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  color: #000;
+  background: #ffe749;
+  top: -5px;
+  right: -5px;
+}
+
+.suggest-item:hover > a > img {
+  scale: 1.1;
+  transition: all 0.2s;
+}
+
+.suggest-item > a > img {
+  transition: all 0.2s;
+}
+
+/* End Suggest */
+
+/* Promotions */
+
+/* End Promotions */
+
+/* Tab-products */
 .tab-product {
   margin-top: 40px;
 }
@@ -646,22 +732,27 @@ body {
   background: #ee2e24 !important;
   border-color: #ee2e24 !important;
 }
+/* End HomePage */
 
-/* News Pico */
-#news-pico {
+/* News Food And Pico */
+#news-pico,
+#news-food {
   padding: 10px 0;
 }
 
-#news-pico-title h4 {
+#news-pico-title h4,
+#news-food-title h4 {
   margin: 20px 0;
 }
 
-#news-pico-title a {
+#news-pico-title a,
+#news-food-title a {
   text-decoration: none;
   color: inherit;
 }
 
-#news-pico-title h4 a i {
+#news-pico-title h4 a i,
+#news-food-title h4 a i {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -674,12 +765,14 @@ body {
   border-radius: 100%;
 }
 
-#news-pico-title h4 a:hover {
+#news-pico-title h4 a:hover,
+#news-food-title h4 a:hover {
   color: #364fc7;
 }
 
 /* news-pico-right */
-#news-pico-right a {
+#news-pico-right a,
+#news-food-right a {
   position: relative;
   display: block;
   height: 170px;
@@ -688,7 +781,8 @@ body {
   overflow: hidden;
 }
 
-#news-pico-right a::before {
+#news-pico-right a::before,
+#news-food-right a::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -698,15 +792,18 @@ body {
   z-index: 1;
 }
 
-#news-pico-right-center a {
+#news-pico-right-center a,
+#news-food-right-center a {
   height: 346px;
 }
 
-#news-pico-right-center a > p > b {
+#news-pico-right-center a > p > b,
+#new-food-right-center a > p > b {
   text-transform: uppercase;
 }
 
-#news-pico-right a > p {
+#news-pico-right a > p,
+#news-food-right a > p {
   position: absolute;
   left: 0;
   bottom: 15px;
@@ -717,7 +814,8 @@ body {
   z-index: 1;
 }
 
-.news-pico-right-time {
+.news-pico-right-time,
+.news-food-right-time {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -730,24 +828,27 @@ body {
   border-radius: 6px;
 }
 
-.news-pico-right-day {
+.news-pico-right-day,
+.news-food-right-day {
   border-bottom: 1px dashed #e9e9e9;
 }
 
-#news-pico-right a:hover p {
+#news-pico-right a:hover p,
+#news-food-right a:hover p {
   color: #fff;
 }
 
-#news-pico-right a:hover img {
+#news-pico-right a:hover img,
+#news-food-right a:hover img {
   transform: scale(1.15);
   transition: all 0.2s;
 }
 
-#news-pico-right img {
+#news-pico-right img,
+#news-food-right img {
   transition: all 0.2s;
 }
-/* End News Pico */
-/* End HomePage */
+/* End News Food And Pico */
 
 /* News Letter */
 #news-letter {
