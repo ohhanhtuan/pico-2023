@@ -362,9 +362,9 @@ body {
 .sub-menu {
   position: absolute;
   top: 40px;
-  left: 275px;
+  left: calc(100% - 5px);
   height: calc(100% - 40px);
-  width: calc(1115px - 275px);
+  width: calc(300% + 5px);
   border-radius: 0 0 10px 10px;
   box-shadow: 0 0 8px #c1c1c1;
   background: #fff;
@@ -450,21 +450,23 @@ body {
   width: 0%;
   height: 100%;
   background: #fff;
+  opacity: 0.5;
   top: 0;
-  left: -30%;
-  transform: skew(-45deg);
+  left: -20%;
+  transform: skew(-30deg);
 }
 
 .banner-hover a:hover::before {
-  width: 130%;
+  width: 140%;
   background: transparent;
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 /* End homepage-menu banner-right */
 
 /* Hot Products */
 #hot-products {
-  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 #hot-product > h3 {
@@ -508,28 +510,24 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: -21px;
-  padding: 0 64px;
-  background: #fff;
-  border: 1px solid #ee2e24;
-  border-radius: 60px;
 }
 
 #view-all a {
+  display: block;
   text-decoration: none;
-  height: 40px;
-  line-height: 40px;
   text-transform: uppercase;
+  font-size: 14px;
   font-weight: bold;
   color: #ee2e24;
-}
-
-#view-all:hover {
-  cursor: pointer;
-  background: #ee2e24;
+  background: #fff;
+  border: 1px solid #ee2e24;
+  padding: 10px 64px;
+  border-radius: 64px;
 }
 
 #view-all:hover a {
   cursor: pointer;
+  background: #ee2e24;
   color: #fff;
 }
 
@@ -631,7 +629,6 @@ body {
 
 /* Suggest */
 #suggest-product {
-  padding-top: 40px;
   padding-bottom: 10px;
 }
 
