@@ -795,18 +795,6 @@ body {
   margin-top: 40px;
 }
 
-.product-item-height {
-  height: 321px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  background: inherit;
-}
-
-.product-item-bgbody {
-  background: inherit;
-}
-
 .tab-product > ul > li > button {
   color: #555;
   text-transform: uppercase;
@@ -824,6 +812,23 @@ body {
   background: #ee2e24 !important;
   border-color: #ee2e24 !important;
 }
+
+/* Tab Products Tivi */
+.product-item-text > p {
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateX(-12%);
+}
+
+.product-item-0 {
+  opacity: 0;
+}
+
+.product-item-bg {
+  background: inherit;
+}
+/* End Tab Products Tivi */
 /* End HomePage */
 
 /* News Food And Pico */
