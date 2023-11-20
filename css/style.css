@@ -507,12 +507,6 @@ body {
 
 #view-all {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -21px;
-}
-
-#view-all a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -523,9 +517,12 @@ body {
   border: 1px solid #ee2e24;
   padding: 10px 64px;
   border-radius: 64px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
 }
 
-#view-all:hover a {
+#view-all:hover {
   cursor: pointer;
   background: #ee2e24;
   color: #fff;
@@ -708,7 +705,17 @@ body {
 /* End Suggest */
 
 /* Promotions */
+#promotions ol li {
+  background: #ee2e24;
+}
 
+.promotion-item-left {
+  background: #fff;
+}
+
+.promotion-items:nth-child(1) {
+  margin-bottom: 10px;
+}
 /* End Promotions */
 
 /* Tab-products */
