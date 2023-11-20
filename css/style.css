@@ -590,7 +590,7 @@ body {
 }
 
 .product-item-price p del {
-  font-size: 14px;
+  font-size: 13px;
   color: #888;
 }
 
@@ -663,16 +663,15 @@ body {
 }
 
 .suggest-item-price > p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   color: #ee2e24;
-  margin-top: 8px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .suggest-item-price del {
-  font-size: 11px;
+  font-size: 12px;
   color: #555;
 }
 
