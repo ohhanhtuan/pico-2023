@@ -705,15 +705,88 @@ body {
 /* End Suggest */
 
 /* Promotions */
-#promotions ol li {
-  background: #ee2e24;
+#promotion-main > h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.promotion-item-left {
+#promotion-main ol li {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 0.5;
+  border: none;
+}
+
+#promotion-main ol li.active {
+  background: #ee2e24;
+  opacity: 1;
+}
+
+.promotion-slide-ol {
+  left: auto;
+  right: auto;
+  margin-left: 30%;
+}
+
+.promotion-slide-left {
   background: #fff;
 }
 
-.promotion-items:nth-child(1) {
+.promotion-slide-left > a {
+  position: relative;
+  display: block;
+}
+
+.promotion-slide-left > a::before {
+  position: absolute;
+  content: "";
+  width: 83px;
+  height: 83px;
+  background: url(../images/sprite.png) no-repeat -89px -203px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.promotion-slide-left > a:hover::before {
+  filter: drop-shadow(2px 4px 6px #000);
+}
+
+.promotion-slide-right {
+  padding-left: 10px;
+}
+
+.promotion-item:first-child {
+  margin-bottom: 5px;
+}
+
+.promotion-item > div {
+  box-shadow: 0 0 8px #c1c1c1;
+}
+
+.promotion-item:hover > div {
+  box-shadow: none;
+}
+
+.promotion-item-img {
+  background: #fff;
+}
+
+.promotion-item-right {
+  padding: 25px 20px 25px 0;
+  background: #fff;
+}
+
+.promotion-item-right > a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 /* End Promotions */
