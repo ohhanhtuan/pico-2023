@@ -1261,14 +1261,20 @@ body {
   /* End Header Top */
 
   /* Header Main */
-
+  #header-main-bottom {
+    display: none;
+  }
   /* End Header Main */
 
   /* HomePage */
   #menu {
     margin-top: 0;
   }
-
+  /* Hot Products */
+  #view-all {
+    padding: 10px 20px;
+  }
+  /* End Hot Products */
   /* End HomePage */
 }
 /* End Mobile */
