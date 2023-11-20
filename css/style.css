@@ -1238,7 +1238,14 @@ body {
 /* Responsive */
 /* Tablet */
 @media (min-width: 768px) and (max-width: 992px) {
+  /* Promotions */
+  .promotion-slide-ol {
+    left: 0;
+    right: 0;
+    margin-left: 15%;
+  }
 }
+/* End Promotions */
 /* End Tablet */
 
 /* Mobile */
@@ -1275,6 +1282,14 @@ body {
     padding: 10px 20px;
   }
   /* End Hot Products */
+
+  /* Promotions */
+  .promotion-slide-ol {
+    left: 0;
+    right: 0;
+    margin-left: 15%;
+  }
+  /* End Promotions */
   /* End HomePage */
 }
 /* End Mobile */
