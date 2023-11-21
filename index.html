@@ -26,11 +26,11 @@
     <div id="header-top">
       <div class="container">
         <div class="row">
-          <div id="header-top-left" class="col-lg-3 col-md-3 col-sm-12">
+          <div id="header-top-left" class="col-lg-3 col-md-3 col-6">
             <a href="#"><i class="fa fa-map-marker"></i> Hệ thống siêu thị</a>
           </div>
 
-          <div id="header-top-right" class="col-lg-9 col-md-9 col-sm-12">
+          <div id="header-top-right" class="col-lg-9 col-md-9 col-6">
             <a href="#"><i class="fa fa-newspaper"></i> Tin tức</a>
             <a href="#"><i class="fa fa-user"></i> Tuyển dụng</a>
             <a href="#"><i class="fa fa-file-alt"></i> Tra cứu hóa đơn VAT</a>
@@ -46,12 +46,12 @@
     <div id="header-main">
       <div class="container">
         <div id="header-main-top" class="row">
-          <div id="logo" class="col-lg-3 col-md-3 col-sm-12">
+          <div id="logo" class="col-lg-3 col-md-3 col-3">
             <h1>
               <a href="#"><img src="./images/logo.png" alt="logo" /></a>
             </h1>
           </div>
-          <div id="search" class="col-lg-5 col-md-5 col-sm-12">
+          <div id="search" class="col-lg-5 col-md-5 col-8">
             <form action="">
               <input type="text" name="search" placeholder="Tìm kiếm" />
               <button type="submit" name="submit">
@@ -59,7 +59,7 @@
               </button>
             </form>
           </div>
-          <div id="header-main-top-right" class="col-lg-4 col-md-4 col-sm-12">
+          <div id="header-main-top-right" class="col-lg-4 col-md-4 col-1">
             <div id="follow">
               <a href="#"
                 >Theo dõi
@@ -96,11 +96,24 @@
       <div class="container">
         <!-- HomePage - Menu & Banner -->
         <div id="homepage-menu" class="row">
-          <div id="menu" class="col-lg-3 col-md-3 col-sm-12">
+          <div id="menu" class="col-lg-3 col-md-12 col-sm-12">
             <h3>
-              <a href="#"><i class="fa fa-bars"></i>Danh mục</a>
+              <a href="#">
+                <button
+                  class="navbar-toggler navbar-light"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#menu-collapse"
+                  aria-controls="navbarToggleExternalContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="fa fa-bars"></span>
+                </button>
+                <i class="fa fa-bars"></i>Danh mục</a
+              >
             </h3>
-            <ul>
+            <ul id="menu-collapse" class="collapse">
               <li class="menu-item">
                 <div class="menu-item-list">
                   <a href="#">Tivi, Loa Soundbar, Âm thanh, Máy chiếu </a>
@@ -747,7 +760,10 @@
               </li>
             </ul>
           </div>
-          <div id="slider" class="col-lg-6 col-md-6 col-sm-12">
+          <div
+            id="slider"
+            class="col-lg-6 col-md-12 col-sm-12 d-none d-lg-block"
+          >
             <div id="slider-menu" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li
@@ -799,7 +815,10 @@
               </div>
             </div>
           </div>
-          <div id="banner-right" class="col-lg-3 col-md-3 col-sm-12">
+          <div
+            id="banner-right"
+            class="col-lg-3 col-md-12 col-sm-12 d-none d-lg-block"
+          >
             <div class="banner-right-item banner-hover">
               <a href="#"
                 ><img
@@ -822,7 +841,9 @@
 
         <!-- HomePage - Menu Bottom -->
         <div id="banner-bottom" class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12 banner-hover">
+          <div
+            class="col-lg-4 col-md-4 col-sm-12 banner-hover d-none d-md-block"
+          >
             <a href="#"
               ><img
                 src="./images/banner_right_3.png"
@@ -830,7 +851,9 @@
                 class="img-fluid"
             /></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 banner-hover">
+          <div
+            class="col-lg-4 col-md-4 col-sm-12 banner-hover d-none d-md-block"
+          >
             <a href="#"
               ><img
                 src="./images/banner_right_4.png"
@@ -838,7 +861,9 @@
                 class="img-fluid"
             /></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12 banner-hover">
+          <div
+            class="col-lg-4 col-md-4 col-sm-12 banner-hover d-none d-md-block"
+          >
             <a href="#"
               ><img
                 src="./images/banner_right_5.png"
@@ -851,7 +876,10 @@
 
         <!-- HomePage - Hot Products -->
         <div id="hot-products" class="row">
-          <div id="hot-product" class="col-lg-12 col-md-12 col-sm-12">
+          <div
+            id="hot-product"
+            class="col-lg-12 col-md-12 col-sm-12 d-none d-md-block"
+          >
             <h3><i>sản phẩm hot</i></h3>
             <div id="hot-product-main">
               <div
@@ -1124,7 +1152,10 @@
 
         <!-- Suggest -->
         <div id="suggest-products" class="row">
-          <div id="suggest-product" class="col-lg-12 col-md-12 col-sm-12">
+          <div
+            id="suggest-product"
+            class="col-lg-12 col-md-12 col-sm-12 d-none d-md-block"
+          >
             <h3>Gợi ý dành riêng cho bạn</h3>
             <div id="suggest-product-main">
               <div
@@ -1392,7 +1423,7 @@
                             <a href="#"
                               >Tivi Oled Posé LG 55LX1QPSA - 55 inch 4K-WebOS</a
                             >
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>34.990.000đ</b>
                                 <del>54.900.000đ</del>
@@ -1417,7 +1448,7 @@
                               >Tivi The Serif Samsung QA55LS01B 55 inch 4K Ultra
                               HD</a
                             >
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>19.990.000đ</b>
                                 <del>23.900.000đ</del>
@@ -1460,7 +1491,7 @@
                               >Tủ Lạnh Samsung RT46K603JB1SV 462Lít Inverter Màu
                               Đen</a
                             >
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>11.490.000đ</b>
                                 <del>13.490.000đ</del>
@@ -1485,7 +1516,7 @@
                               >Tủ lạnh Samsung RF48A4000B4/SV 488 Lít
                               Inverter</a
                             >
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>13.990.000đ</b>
                                 <del>23.990.000đ</del>
@@ -1528,7 +1559,7 @@
                               >Máy Giặt Samsung WD95T754DBX/SV, 9.5kg giặt + 6kg
                               sấy AI Inverter</a
                             >
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>14.990.000đ</b>
                                 <del>14.990.000đ</del>
@@ -1552,7 +1583,7 @@
                               >Máy Giặt Samsung WW85T4040CE/SV 8.5kg Inverter
                               Màu Trắng</a
                             >
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>6.790.000đ</b>
                                 <del>7.990.000đ</del>
@@ -1595,7 +1626,7 @@
                               >Laptop Dell Vostro V3400-70270644 (P132G003) Core
                               i3-1115G4</a
                             >
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>12.399.000đ</b>
                                 <del>13.599.000đ</del>
@@ -1620,7 +1651,7 @@
                               >Laptop MSI Bravo BRAVO 15 B5DD -276VN AMD Ryzen
                               5-5600H</a
                             >
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>15.799.000đ</b>
                                 <del>17.399.000đ</del>
@@ -1660,7 +1691,7 @@
                           </div>
                           <div class="promotion-item-right col-lg-7 col-md-7">
                             <a href="#">Lò Vi Sóng Sharp R-201VN-W 20 lít</a>
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>1.599.000đ</b>
                                 <del>1.990.000đ</del>
@@ -1682,7 +1713,7 @@
                           </div>
                           <div class="promotion-item-right col-lg-7 col-md-7">
                             <a href="#">Nồi cơm PANASONIC SR-MVN187HRA</a>
-                            <div class="product-item-price">
+                            <div class="product-item-price promotion-price">
                               <p>
                                 <b>1.090.000đ</b>
                                 <del>1.180.000đ</del>
@@ -4433,7 +4464,7 @@
             </div>
           </div>
           <div id="news-food-right" class="row">
-            <div id="news-food-right-left" class="col-lg-3 col-md-3 col-sm-12">
+            <div id="news-food-right-left" class="col-lg-3 col-md-6 col-sm-12">
               <a href="#">
                 <img src="./images/news-food-1.jpg" class="img-fluid" />
                 <p>
@@ -4461,7 +4492,7 @@
             </div>
             <div
               id="news-food-right-center"
-              class="col-lg-6 col-md-6 col-sm-12"
+              class="col-lg-6 col-md-12 col-sm-12 d-none d-lg-block"
             >
               <a href="#"
                 ><img src="./images/news-food-3.jpg" class="img-fluid" />
@@ -4475,7 +4506,7 @@
                 ></a
               >
             </div>
-            <div id="news-food-right-right" class="col-lg-3 col-md-3 col-sm-12">
+            <div id="news-food-right-right" class="col-lg-3 col-md-6 col-sm-12">
               <a href="#"
                 ><img src="./images/news-food-4.jpg" class="img-fluid" />
                 <p>
@@ -4516,7 +4547,7 @@
             </div>
           </div>
           <div id="news-pico-right" class="row">
-            <div id="news-pico-right-left" class="col-lg-3 col-md-3 col-sm-12">
+            <div id="news-pico-right-left" class="col-lg-3 col-md-6 col-sm-12">
               <a href="#">
                 <img src="./images/news-pico-1.jpg" class="img-fluid" />
                 <p>
@@ -4544,7 +4575,7 @@
             </div>
             <div
               id="news-pico-right-center"
-              class="col-lg-6 col-md-6 col-sm-12"
+              class="col-lg-6 col-md-12 col-sm-12 d-none d-lg-block"
             >
               <a href="#"
                 ><img src="./images/news-pico-3.png" class="img-fluid" />
@@ -4558,7 +4589,7 @@
                 ></a
               >
             </div>
-            <div id="news-pico-right-right" class="col-lg-3 col-md-3 col-sm-12">
+            <div id="news-pico-right-right" class="col-lg-3 col-md-6 col-sm-12">
               <a href="#"
                 ><img src="./images/news-pico-4.png" class="img-fluid" />
                 <p>
@@ -4627,13 +4658,19 @@
               <span>Miễn phí 200 km</span>
             </a>
           </div>
-          <div id="footer-top-center" class="col-lg-4 col-md-4 col-sm-12">
+          <div
+            id="footer-top-center"
+            class="col-lg-4 col-md-4 col-sm-12 d-none d-md-block"
+          >
             <a href="#">
               <b>Thanh toán cod</b>
               <span>Thanh toán trực tiếp khi nhận hàng</span>
             </a>
           </div>
-          <div id="footer-top-right" class="col-lg-4 col-md-4 col-sm-12">
+          <div
+            id="footer-top-right"
+            class="col-lg-4 col-md-4 col-sm-12 d-none d-md-block"
+          >
             <a href="#">
               <b>Đổi trả hàng</b>
               <span>Thời gian đổi trả hàng lên đến 30 ngày</span>

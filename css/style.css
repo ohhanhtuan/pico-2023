@@ -11,6 +11,7 @@ body {
   text-align: center;
 }
 /* End Global Banner */
+/* ------------------------------ */
 
 /* Header Top */
 #header-top-left,
@@ -225,6 +226,7 @@ body {
   color: #ee2e24;
 }
 /* End Header Main */
+/* ------------------------------ */
 
 /* HomePage */
 /* homepage-menu menu */
@@ -369,6 +371,7 @@ body {
   box-shadow: 0 0 8px #c1c1c1;
   background: #fff;
   display: none;
+  overflow: auto;
   z-index: 20;
 }
 
@@ -830,6 +833,7 @@ body {
 }
 /* End Tab Products Tivi */
 /* End HomePage */
+/* ------------------------------ */
 
 /* News Food And Pico */
 #news-food-and-pico {
@@ -947,6 +951,7 @@ body {
   transition: all 0.2s;
 }
 /* End News Food And Pico */
+/* ------------------------------ */
 
 /* News Letter */
 #news-letter {
@@ -991,6 +996,7 @@ body {
   outline: none;
 }
 /* End News Letter */
+/* ------------------------------ */
 
 /* Footer */
 /* Footer Top */
@@ -1234,62 +1240,159 @@ body {
 }
 /* End Footer Bottom */
 /* End Footer */
+/* ------------------------------ */
 
 /* Responsive */
-/* Tablet */
-@media (min-width: 768px) and (max-width: 992px) {
-  /* Promotions */
-  .promotion-slide-ol {
-    left: 0;
-    right: 0;
-    margin-left: 15%;
-  }
-}
-/* End Promotions */
-/* End Tablet */
-
-/* Mobile */
-@media (max-width: 768px) {
-  /* Global Banner */
-
-  /* End Global Banner */
-  /* Header Top */
-  #header-top-right {
-    text-align: left;
+/* ---Laptop, PC */
+@media (min-width: 992px) {
+  #menu > ul {
+    display: block;
   }
 
-  #header-top-right a {
-    margin-left: 5px;
-  }
-
-  #header-top-right a:nth-child(2) {
+  #menu > h3 > a > button {
     display: none;
   }
-  /* End Header Top */
+}
+/* End Laptop, PC */
+/* ------------------------------ */
 
-  /* Header Main */
+/* ---Tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Header */
+  #header-main {
+    padding-bottom: 40px;
+  }
+  #header-top-right a {
+    margin-left: 15px;
+  }
+
+  #follow a,
+  #user a {
+    padding-left: 30px;
+  }
+
   #header-main-bottom {
     display: none;
   }
-  /* End Header Main */
+  /* End Header*/
 
-  /* HomePage */
-  #menu {
-    margin-top: 0;
+  /* Homepage */
+  #menu > h3 > a > i {
+    display: none;
   }
-  /* Hot Products */
-  #view-all {
-    padding: 10px 20px;
-  }
-  /* End Hot Products */
 
-  /* Promotions */
+  #menu > h3 > a > button > span {
+    color: #fff;
+  }
+
+  .menu-item:hover .sub-menu {
+    display: none;
+  }
+
+  .product-item-price span {
+    padding: 0 4px;
+  }
+
+  .suggest-item-price > p {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+
+  .promotion-item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px 40px 25px 0;
+  }
+
+  .promotion-item-right > a {
+    font-size: 16px;
+  }
+
   .promotion-slide-ol {
     left: 0;
     right: 0;
     margin-left: 15%;
   }
-  /* End Promotions */
+}
+/* End HomePage */
+/* End Tablet */
+
+/* ------------------------------ */
+/* ---Mobile */
+@media (max-width: 768px) {
+  /* Header */
+  #header-main-top {
+    padding-bottom: 40px;
+  }
+
+  #header-top-right a {
+    margin-left: 10px;
+  }
+
+  #header-top-right a:nth-child(1),
+  #header-top-right a:nth-child(2),
+  #header-top-right a:nth-child(5) {
+    display: none;
+  }
+
+  #follow,
+  #user {
+    display: none;
+  }
+
+  #header-main-bottom {
+    display: none;
+  }
+  /* End Header */
+
+  /* HomePage */
+  #menu > h3 > a > i {
+    display: none;
+  }
+
+  #menu > h3 > a > button > span {
+    color: #fff;
+  }
+
+  .menu-item:hover .sub-menu {
+    display: none;
+  }
+
+  #view-all {
+    padding: 10px 20px;
+  }
+
+  .promotion-slide-ol {
+    left: 0;
+    right: 0;
+    margin-left: 15%;
+  }
+
+  #banner-bottom {
+    margin: 0;
+  }
+
+  #hot-products,
+  #suggest-products {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .promotion-item-right {
+    text-align: center;
+    padding: 10px 0 20px 0;
+  }
+
+  .promotion-price {
+    justify-content: center;
+  }
+
+  #news-letter-main form {
+    width: 100%;
+  }
   /* End HomePage */
 }
 /* End Mobile */
+/* ------------------------------ */
