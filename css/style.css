@@ -1342,6 +1342,10 @@ body {
     display: none;
   }
 
+  #search form input {
+    width: 220px;
+  }
+
   #header-main-bottom {
     display: none;
   }
