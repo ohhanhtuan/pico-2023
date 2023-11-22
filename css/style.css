@@ -640,6 +640,7 @@ body {
 }
 
 #suggest-product-main {
+  overflow: hidden;
   background: #fff;
 }
 
@@ -702,6 +703,28 @@ body {
 
 .suggest-item > a > img {
   transition: all 0.2s;
+}
+
+#suggest-btn-prev {
+  left: -60px;
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+
+#suggest-btn-next {
+  right: -60px;
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+
+#suggest-product-main:hover #suggest-btn-prev {
+  left: 10px;
+  transition: all 0.3s;
+}
+
+#suggest-product-main:hover #suggest-btn-next {
+  right: 10px;
+  transition: all 0.3s;
 }
 
 /* End Suggest */
