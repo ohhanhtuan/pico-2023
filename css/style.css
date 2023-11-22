@@ -1420,6 +1420,10 @@ body {
     justify-content: center;
   }
 
+  .products-list-m {
+    display: none;
+  }
+
   #news-letter-main form {
     width: 100%;
   }
