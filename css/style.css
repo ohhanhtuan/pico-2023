@@ -1391,6 +1391,10 @@ body {
     padding: 10px 20px;
   }
 
+  #promotion-main > h4 {
+    font-size: 20px;
+  }
+
   .promotion-slide-ol {
     left: 0;
     right: 0;
@@ -1420,6 +1424,27 @@ body {
     width: 100%;
   }
   /* End HomePage */
+
+  /* -----News Food And Pico----- */
+  #news-pico-title > h4,
+  #news-food-title > h4 {
+    font-size: 20px;
+  }
+  /* -----End News Food And Pico----- */
+
+  /* -----News Letter----- */
+  #news-letter-main > h3 {
+    font-size: 20px;
+  }
+  /* -----End News Letter----- */
+
+  /* -----Footer----- */
+  #footer-top-left,
+  #footer-top-center,
+  #footer-top-right {
+    text-align: left;
+  }
+  /* -----End Footer------ */
 }
 /* End Mobile */
 /* ------------------------------ */
