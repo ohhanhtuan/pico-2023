@@ -5,14 +5,14 @@ body {
   background: #f5f5f5;
 }
 
-/* Global Banner */
+/* ---Global Banner--- */
 #global-banner {
   background: #cd020b;
   text-align: center;
 }
-/* End Global Banner */
-/* ------------------------------ */
+/* ---End Global Banner--- */
 
+/* ---Header--- */
 /* Header Top */
 #header-top-left,
 #header-top-right {
@@ -226,10 +226,10 @@ body {
   color: #ee2e24;
 }
 /* End Header Main */
-/* ------------------------------ */
+/* ---End Header--- */
 
-/* HomePage */
-/* homepage-menu menu */
+/* ---HomePage--- */
+/* Menu & Banner */
 #menu {
   position: relative;
   margin-top: -40px;
@@ -408,7 +408,7 @@ body {
   display: block;
 }
 
-/* homepage-menu slider */
+/* menu_slider */
 #slider {
   padding-top: 10px;
 }
@@ -426,9 +426,9 @@ body {
 #slider ol li.active {
   background: #ffbf00;
 }
-/* End homepage-menu slider */
+/* End menu_slider */
 
-/* homepage-menu banner-right */
+/* menu_banner-right */
 #banner-right {
   padding-top: 10px;
 }
@@ -464,7 +464,8 @@ body {
   background: transparent;
   transition: all 0.6s;
 }
-/* End homepage-menu banner-right */
+/* End menu_banner-right */
+/* End Menu & Banner */
 
 /* Hot Products */
 #hot-products {
@@ -472,14 +473,14 @@ body {
   padding-bottom: 40px;
 }
 
-#hot-product > h3 {
+#hot-product-title {
   margin: 0;
   text-align: center;
   background: #ee2e24;
   border-radius: 10px 10px 0 0;
 }
 
-#hot-product h3 i {
+#hot-product-title i {
   position: relative;
   height: 60px;
   line-height: 60px;
@@ -490,7 +491,7 @@ body {
   padding-left: 53px;
 }
 
-#hot-product h3 i::before {
+#hot-product-title i::before {
   position: absolute;
   content: "";
   width: 48px;
@@ -544,12 +545,19 @@ body {
   margin-right: 5px !important;
 }
 
-.product-item-top {
+.product-item > a {
   position: relative;
-  display: block;
+  padding-bottom: 100%;
 }
 
-.product-item-top i {
+.product-item > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.product-item > a i {
   position: absolute;
   content: "";
   width: 48px;
@@ -560,7 +568,7 @@ body {
   left: 0;
 }
 
-.product-item-top span {
+.product-item > a span {
   position: absolute;
   content: "";
   width: 45px;
@@ -621,18 +629,10 @@ body {
   transform: translateY(-8px);
   transition: all 0.2s;
 }
-
-.product-item img {
-  transition: all 0.2s;
-}
 /* End Hot-Products */
 
 /* Suggest */
-#suggest-product {
-  padding-bottom: 10px;
-}
-
-#suggest-product h3 {
+#suggest-product-title {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 22px;
@@ -726,18 +726,17 @@ body {
   right: 10px;
   transition: all 0.3s;
 }
-
 /* End Suggest */
 
 /* Promotions */
-#promotion-main > h4 {
+#promotion-main-title {
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-#promotion-main ol li {
+#promotions .promotion-main ol li {
   height: 10px;
   width: 10px;
   border-radius: 100%;
@@ -746,7 +745,7 @@ body {
   border: none;
 }
 
-#promotion-main ol li.active {
+#promotions .promotion-main ol li.active {
   background: #ee2e24;
   opacity: 1;
 }
@@ -839,7 +838,7 @@ body {
   border-color: #ee2e24 !important;
 }
 
-/* Tab Products Tivi */
+/* Tab Products - Tab 3 */
 .product-item-text > p {
   white-space: nowrap;
   font-size: 20px;
@@ -854,30 +853,26 @@ body {
 .product-item-bg {
   background: inherit;
 }
-/* End Tab Products Tivi */
-/* End HomePage */
-/* ------------------------------ */
+/* End Tab Products - Tab 3 */
+/* ---End HomePage--- */
 
-/* News Food And Pico */
-#news-food-and-pico {
+/* ---Newspaper--- */
+#newspaper {
   background: #fff;
   margin-top: 30px;
   padding-bottom: 10px;
 }
 
-#news-pico-title h4,
-#news-food-title h4 {
+#newspaper-title h4 {
   margin: 20px 0;
 }
 
-#news-pico-title a,
-#news-food-title a {
+#newspaper-title a {
   text-decoration: none;
   color: inherit;
 }
 
-#news-pico-title h4 a i,
-#news-food-title h4 a i {
+#newspaper-title h4 a i {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -890,14 +885,12 @@ body {
   border-radius: 100%;
 }
 
-#news-pico-title h4 a:hover,
-#news-food-title h4 a:hover {
+#newspaper-title h4 a:hover {
   color: #364fc7;
 }
 
-/* news-pico-right */
-#news-pico-right a,
-#news-food-right a {
+/* newspaper-right */
+#newspaper-right a {
   position: relative;
   display: block;
   height: 170px;
@@ -906,8 +899,7 @@ body {
   overflow: hidden;
 }
 
-#news-pico-right a::before,
-#news-food-right a::before {
+#newspaper-right a::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -917,18 +909,15 @@ body {
   z-index: 1;
 }
 
-#news-pico-right-center a,
-#news-food-right-center a {
+#newspaper-right-center a {
   height: 346px;
 }
 
-#news-pico-right-center a > p > b,
-#new-food-right-center a > p > b {
+#newspaper-right-center a > p > b {
   text-transform: uppercase;
 }
 
-#news-pico-right a > p,
-#news-food-right a > p {
+#newspaper-right a > p {
   position: absolute;
   left: 0;
   bottom: 15px;
@@ -939,8 +928,7 @@ body {
   z-index: 1;
 }
 
-.news-pico-right-time,
-.news-food-right-time {
+.news-pico-right-time {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -953,30 +941,25 @@ body {
   border-radius: 6px;
 }
 
-.news-pico-right-day,
-.news-food-right-day {
+.news-pico-right-day {
   border-bottom: 1px dashed #e9e9e9;
 }
 
-#news-pico-right a:hover p,
-#news-food-right a:hover p {
+#newspaper-right a:hover p {
   color: #fff;
 }
 
-#news-pico-right a:hover img,
-#news-food-right a:hover img {
+#newspaper-right a:hover img {
   transform: scale(1.15);
   transition: all 0.2s;
 }
 
-#news-pico-right img,
-#news-food-right img {
+#newspaper-right img {
   transition: all 0.2s;
 }
-/* End News Food And Pico */
-/* ------------------------------ */
+/* ---End Newspaper--- */
 
-/* News Letter */
+/* ---News Letter--- */
 #news-letter {
   text-align: center;
   padding: 26px 0;
@@ -1018,10 +1001,9 @@ body {
 #news-letter-main form input:focus {
   outline: none;
 }
-/* End News Letter */
-/* ------------------------------ */
+/* ---End News Letter--- */
 
-/* Footer */
+/* ---Footer--- */
 /* Footer Top */
 #footer-top {
   background: #fff;
@@ -1243,7 +1225,6 @@ body {
   height: 22px;
   background: url(../images/sprite.png) no-repeat -68px -162px;
 }
-
 /* End Footer Main */
 
 /* Footer Bottom */
@@ -1262,11 +1243,10 @@ body {
   color: #ee2e24;
 }
 /* End Footer Bottom */
-/* End Footer */
-/* ------------------------------ */
+/* ---End Footer--- */
 
-/* Responsive */
-/* ---Laptop, PC */
+/* ------Responsive----- */
+/* ---Laptop, PC--- */
 @media (min-width: 992px) {
   #menu > ul {
     display: block;
@@ -1276,10 +1256,9 @@ body {
     display: none;
   }
 }
-/* End Laptop, PC */
-/* ------------------------------ */
+/* ---End Laptop, PC--- */
 
-/* ---Tablet */
+/* ---Tablet--- */
 @media (min-width: 768px) and (max-width: 992px) {
   /* Header */
   #header-main {
@@ -1340,10 +1319,9 @@ body {
   }
 }
 /* End HomePage */
-/* End Tablet */
+/* ---End Tablet--- */
 
-/* ------------------------------ */
-/* ---Mobile */
+/* ---Mobile--- */
 @media (max-width: 768px) {
   /* Header */
   #header-main-top {
@@ -1391,7 +1369,7 @@ body {
     padding: 10px 20px;
   }
 
-  #promotion-main > h4 {
+  #promotion-main-title {
     font-size: 20px;
   }
 
@@ -1429,26 +1407,25 @@ body {
   }
   /* End HomePage */
 
-  /* -----News Food And Pico----- */
-  #news-pico-title > h4,
-  #news-food-title > h4 {
+  /* Newspaper */
+  #newspaper-title > h4 {
     font-size: 18px;
   }
-  /* -----End News Food And Pico----- */
+  /* End Newspaper */
 
-  /* -----News Letter----- */
+  /* News Letter */
   #news-letter-main > h3 {
     font-size: 20px;
   }
-  /* -----End News Letter----- */
+  /* End News Letter */
 
-  /* -----Footer----- */
+  /* Footer */
   #footer-top-left,
   #footer-top-center,
   #footer-top-right {
     text-align: left;
   }
-  /* -----End Footer------ */
+  /* End Footer */
 }
-/* End Mobile */
-/* ------------------------------ */
+/* ---End Mobile--- */
+/* -----End Responsive----- */
